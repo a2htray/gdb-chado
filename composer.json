@@ -1,0 +1,38 @@
+{
+    "name": "a2htray/gdb-chado",
+    "description": "basic tool of gene database website",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "a2htray",
+            "email": "a2htray.yuen@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "a2htray/gdb-mozart": "dev-master",
+        "illuminate/support": ">=5.8",
+        "symfony/event-dispatcher": ">=4.2"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "A2htray\\GDBChado\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A2htray\\GDBChado\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "A2htray\\GDBChado\\GDBChadoServiceProvider"
+            ]
+        }
+    }
+}
